@@ -1,8 +1,8 @@
 # ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD
 
-*** El us es simple, podeu fer-ho aixi:
+## El us es simple, podeu fer-ho aixi:
 
-Primer instalem les dependencies:
+# Primer instalem les dependencies:
 
 ```
 $ python3 -m venv .venv && source .venv/bin/activate && \
