@@ -4,41 +4,38 @@
 
 Eina d'automatització de formularis desenvolupada amb Python. Permet generar respostes de prova utilitzant diferents paràmetres de configuració.
 
-📦 1. Instal·lació de dependències
+## 📦 1. Instal·lació de dependències
 
-Primer, clonem el repositori i accedim al directori del projecte:
+### Primer, clonem el repositori i accedim al directori del projecte:
+```
+$ git clone https://github.com/ITB2627-HussainAsfand/ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD.git
 
-bash
-git clone https://github.com/ITB2627-HussainAsfand/ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD.git
+$ cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/Python/Automatation
+```
 
-cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/Python/Automatation
+### Creem i activem l'entorn virtual:
+```
+$ python3 -m venv .venv
+$ source .venv/bin/activate
 
+```
 
-Creem i activem l'entorn virtual:
+### Instal·lem les llibreries necessàries:
+```
+$ pip install faker requests beautifulsoup4 playwright
+```
 
-bash
-python3 -m venv .venv
-source .venv/bin/activate
+### Instal·lem els components necessaris de Playwright i Chromium:
+```
+$ playwright install-deps chromium
+$ playwright install chromium
+```
+### ⚙️ 2. Execució del programa
 
+### Un cop tenim totes les dependències instal·lades, podem executar el programa amb la següent comanda:
 
-Instal·lem les llibreries necessàries:
-
-bash
-pip install faker requests beautifulsoup4 playwright
-
-
-Instal·lem els components necessaris de Playwright i Chromium:
-
-bash
-playwright install-deps chromium
-playwright install chromium
-
-⚙️ 2. Execució del programa
-
-Un cop tenim totes les dependències instal·lades, podem executar el programa amb la següent comanda:
-
-bash
-.venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
+```
+$ .venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
 
 📝 Paràmetres disponibles
 Paràmetre	Descripció
@@ -46,11 +43,11 @@ URL	Adreça del formulari de Google Forms
 -n	Nombre de respostes de prova
 -t	Nivell de variació de les dades generades
 💡 Exemple d'execució
-bash
-.venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
 
+$ .venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
+```
 
-Aquesta comanda configura:
+## Aquesta comanda configura:
 
 📊 10 respostes de prova.
 ⚙️ Nivell 3 de variació de les dades.
@@ -66,4 +63,4 @@ Evita enviar respostes automatitzades a formularis de tercers sense permís.
 🌐 Requests
 🍜 BeautifulSoup4
 
-⭐ Projecte desenvolupat amb finalitats educatives.
+# ⭐ Projecte desenvolupat amb finalitats educatives. ITB 26/27 MDS
