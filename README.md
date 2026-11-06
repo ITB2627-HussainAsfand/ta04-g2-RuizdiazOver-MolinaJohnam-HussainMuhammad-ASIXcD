@@ -19,13 +19,10 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### Instal·lem les llibreries necessàries:
+### Instal·lem les llibreries necessàries i components necessaris de Playwright i Chromium:
 ```
 pip install faker requests beautifulsoup4 playwright
-```
 
-### Instal·lem els components necessaris de Playwright i Chromium:
-```
 playwright install chromium
 ```
 ### ⚙️ 2. Execució del programa
