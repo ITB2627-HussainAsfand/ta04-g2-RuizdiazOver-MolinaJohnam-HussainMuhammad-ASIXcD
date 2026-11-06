@@ -8,34 +8,33 @@ Eina d'automatització de formularis desenvolupada amb Python. Permet generar re
 
 ### Primer, clonem el repositori i accedim al directori del projecte:
 ```
-$ git clone https://github.com/ITB2627-HussainAsfand/ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD.git
+git clone https://github.com/ITB2627-HussainAsfand/ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD.git
 
-$ cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/Python/Automatation
+cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/Python/Automatation\ Forms/
 ```
 
 ### Creem i activem l'entorn virtual:
 ```
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 ### Instal·lem les llibreries necessàries:
 ```
-$ pip install faker requests beautifulsoup4 playwright
+pip install faker requests beautifulsoup4 playwright
 ```
 
 ### Instal·lem els components necessaris de Playwright i Chromium:
 ```
-$ playwright install-deps chromium
-$ playwright install chromium
+playwright install-deps chromium
+playwright install chromium
 ```
 ### ⚙️ 2. Execució del programa
 
 ### Un cop tenim totes les dependències instal·lades, podem executar el programa amb la següent comanda:
 
 ```
-$ .venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
+.venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
 
 📝 Paràmetres disponibles
 Paràmetre	Descripció
@@ -44,7 +43,7 @@ URL	Adreça del formulari de Google Forms
 -t	Nivell de variació de les dades generades
 💡 Exemple d'execució
 
-$ .venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
+.venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
 ```
 
 ## Aquesta comanda configura:
