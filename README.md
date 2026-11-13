@@ -150,12 +150,19 @@ El programa genera els següents fitxers:
 ## ⚙️ Desenvolupat amb
 
 ⚙️ Python 3
+
 ⚙️ CSV
+
 ⚙️ XML (ElementTree)
+
 ⚙️ JSON
+
 ⚙️ SVG
+
 ⚙️ Regex (expressions regulars)
+
 ⚙️ Base64
+
 ⚙️ Datetime
 
 # ⭐ Projecte desenvolupat amb finalitats educatives. ITB 26/27 MDS
