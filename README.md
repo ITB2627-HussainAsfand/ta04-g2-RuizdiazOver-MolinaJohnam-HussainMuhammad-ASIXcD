@@ -9,6 +9,8 @@ Eina d'automatització de formularis desenvolupada amb Python. Permet generar re
 ### Primer, clonem el repositori i accedim al directori del projecte:
 ```
 git clone https://github.com/ITB2627-HussainAsfand/ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD.git
+```
+```
 
 cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/Python/Automatation\ Forms/ && ls
 ```
@@ -16,13 +18,16 @@ cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/Python/Automatation\
 ### Creem i activem l'entorn virtual:
 ```
 python3 -m venv .venv
+```
+```
 source .venv/bin/activate
 ```
 
 ### Instal·lem les llibreries necessàries i components necessaris de Playwright i Chromium:
 ```
 pip install faker requests beautifulsoup4 playwright
-
+```
+```
 playwright install chromium
 ```
 # ⚙️ 2. Execució del programa
@@ -31,7 +36,9 @@ playwright install chromium
 
 ```
 .venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
-
+```
+### No fa falta executar aixo:
+```
 📝 Paràmetres disponibles
 Paràmetre	Descripció
 URL	Adreça del formulari de Google Forms
