@@ -87,7 +87,7 @@ cd ../ScriptGestion/
 python3 gestor_incidencies.py
 ```
 
-El programa permet seleccionar interactivament el fitxer CSV o XML que volem processar.
+El programa permet seleccionar interactivament el fitxer CSV o XML que volem processar, posant la ruta directa o si esta en la mateixa carpeta...
 
 ### També podem indicar directament el fitxer d'entrada:
 ```
