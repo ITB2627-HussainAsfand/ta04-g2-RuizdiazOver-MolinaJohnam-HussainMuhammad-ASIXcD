@@ -181,7 +181,7 @@ El programa genera els següents fitxers:
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=itb2627-hussainasfand%2Fta04-g2-ruizdiazover-molinajohnam-hussainmuhammad-asixcd&type=date&legend=bottom-right">
+<a href="https://freesvg.org/img/Troll-Face.png">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=itb2627-hussainasfand/ta04-g2-ruizdiazover-molinajohnam-hussainmuhammad-asixcd&type=date&theme=dark&legend=bottom-right" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=itb2627-hussainasfand/ta04-g2-ruizdiazover-molinajohnam-hussainmuhammad-asixcd&type=date&legend=bottom-right" />
