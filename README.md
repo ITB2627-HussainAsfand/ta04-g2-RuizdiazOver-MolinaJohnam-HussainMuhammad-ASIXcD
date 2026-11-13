@@ -1,147 +1,131 @@
 ### ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD
 
-🚀 Automatització de Google Forms i Gestió d'Incidències
+🚀 Automatització de Google Forms
 
-Eina d'automatització i gestió de dades desenvolupada amb Python. El projecte inclou dos programes principals: un sistema per generar respostes de prova a Google Forms i un gestor d'incidències que permet importar, netejar, reparar i classificar dades procedents de fitxers CSV i XML.
+Eina d'automatització de formularis desenvolupada amb Python. Permet generar respostes de prova utilitzant diferents paràmetres de configuració.
 
-## 📦 1. Instal·lació de dependències
+# 📦 1. Instal·lació de dependències
 
 ### Primer, clonem el repositori i accedim al directori del projecte:
-
 ```
 git clone https://github.com/ITB2627-HussainAsfand/ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD.git
 
-cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/
+cd ta04-g2-RuizdiazOver-MolinaJohnam-HussainMuhammad-ASIXcD/Python/Automatation\ Forms/ && ls
 ```
 
 ### Creem i activem l'entorn virtual:
-
 ```
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### Instal·lem les llibreries necessàries per a l'automatització de Google Forms i els components de Playwright i Chromium:
-
+### Instal·lem les llibreries necessàries i components necessaris de Playwright i Chromium:
 ```
 pip install faker requests beautifulsoup4 playwright
 
 playwright install chromium
 ```
+# ⚙️ 2. Execució del programa
 
-### Per al Gestor d'Incidències:
-
-No és necessari instal·lar cap llibreria externa, ja que utilitza les llibreries estàndard de Python 3.
-
-## ⚙️ 2. Execució dels programes
-
-### 📝 Automatització de Google Forms
-
-Un cop tenim totes les dependències instal·lades, accedim al directori del projecte:
-
-```
-cd "Python/Automatation Forms/"
-```
-
-Executem el programa amb la següent comanda:
+### Un cop tenim totes les dependències instal·lades, podem executar el programa amb la següent comanda:
 
 ```
 .venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
-```
 
-📝 **Paràmetres disponibles**
+📝 Paràmetres disponibles
+Paràmetre	Descripció
+URL	Adreça del formulari de Google Forms
+-n	Nombre de respostes de prova (1-∞), normalment google forms no permeteix moltes desde una mateixa
+-t	Nivell de variació de les dades generades (1-3)
 
-| Paràmetre | Descripció |
-|---|---|
-| URL | Adreça del formulari de Google Forms |
-| -n | Nombre de respostes de prova (1-∞) |
-| -t | Nivell de variació de les dades generades (1-3) |
-
-💡 **Exemple d'execució:**
-
-```
+💡 Exemple d'execució:
 .venv/bin/python forms.py "URL_DEL_FORMULARI" -n 10 -t 3
 ```
 
-### Aquesta comanda configura:
+# Aquesta comanda configura:
 
 📊 10 respostes de prova.
-
 ⚙️ Nivell 3 de variació de les dades.
+⚠️ 3. Notes importants
+Comprova que l'entorn virtual estigui activat abans d'executar el projecte.
+Assegura't que Chromium estigui instal·lat correctament.
+Utilitza únicament formularis propis o entorns de proves amb autorització.
+Evita enviar respostes automatitzades a formularis de tercers sense permís.
+⚙️ Desenvolupat amb
+⚙️ Python
+⚙️ Playwright
+⚙️ Faker
+⚙️ Requests
+⚙️ BeautifulSoup4
 
 ---
 
-### 🖥️ Gestor d'Incidències
+# 🖥️ Gestor d'Incidències
 
-Accedim al directori del gestor:
+Eina de gestió, migració i neteja de dades d'incidències desenvolupada amb Python. Permet llegir fitxers CSV i XML, detectar i reparar dades incorrectes, normalitzar informació i generar estadístiques sobre les incidències processades.
 
+# 📦 4. Instal·lació
+
+### Accedim al directori del projecte:
 ```
-cd Python/ScriptGestion/
+cd ../ScriptGestion/
 ```
 
-Executem el programa sense especificar cap fitxer:
+### No és necessari instal·lar cap llibreria externa, ja que el programa utilitza les llibreries estàndard de Python 3.
 
+# ⚙️ 5. Execució del programa
+
+### Podem executar el programa sense indicar cap fitxer:
 ```
 python3 gestor_incidencies.py
 ```
 
 El programa permet seleccionar interactivament el fitxer CSV o XML que volem processar.
 
-També podem indicar directament el fitxer d'entrada:
-
+### També podem indicar directament el fitxer d'entrada:
 ```
 python3 gestor_incidencies.py incidencies.csv
 ```
 
 O bé un fitxer XML:
-
 ```
 python3 gestor_incidencies.py incidencies.xml
 ```
 
-### 🔄 Funcionament del Gestor d'Incidències
+# 🔄 6. Funcionament del programa
 
-**1. Importació i migració de dades**
+### 📥 Importació i migració de dades
 
-📄 Llegeix fitxers CSV amb diferents separadors i codificacions.
+- Llegeix fitxers CSV amb diferents separadors i codificacions.
+- Permet llegir fitxers XML directament.
+- Converteix automàticament els fitxers CSV a XML (`incidencies.xml`).
+- Normalitza els noms de les columnes.
 
-🌳 Permet llegir fitxers XML directament.
+### 🌳 Generació del diagrama XML
 
-🔄 Converteix automàticament els fitxers CSV a XML (`incidencies.xml`).
+- Dibuixa l'estructura de l'arbre XML a la terminal.
+- Genera un diagrama visual en format SVG (`arbre_xml.svg`).
 
-**2. Generació del diagrama XML**
+### 🧹 Neteja i reparació de dades
 
-🌳 Dibuixa l'estructura de l'arbre XML a la terminal.
+- **Files buides:** les separa i les guarda per consultar-les posteriorment.
+- **Text codificat:** descodifica continguts en binari, hexadecimal i Base64 quan és possible.
+- **Text corrupte:** repara caràcters mal codificats, entitats HTML, codificacions URL i caràcters de control.
+- **Text il·legible:** detecta continguts sense sentit i buida o descarta els registres afectats.
+- **Noms mal escrits:** normalitza noms, aules, tipus d'equip i altres camps.
+- **Prioritats i estats:** unifica sinònims, traduccions i faltes d'ortografia.
+- **Dates:** interpreta diferents formats de data i hora.
 
-📊 Genera un diagrama visual en format SVG (`arbre_xml.svg`).
+### 📊 Estadístiques i resultats
 
-**3. Neteja i reparació de dades**
+- Mostra les correccions realitzades i els errors detectats.
+- Genera estadístiques de les incidències processades a la terminal.
+- Utilitza colors per diferenciar informació, correccions i errors.
+- Mostra informació agrupada per tipus d'equip, prioritat, estat, departament, categoria, sistema operatiu i tècnic.
+- Calcula temps mitjans de resolució.
+- Identifica incidències crítiques pendents de resoldre.
 
-🧹 Detecta i separa les files buides.
-
-🔓 Descodifica continguts en binari, hexadecimal i Base64 quan és possible.
-
-🔧 Repara text corrupte, caràcters mal codificats, entitats HTML i codificacions URL.
-
-❌ Detecta textos sense sentit o il·legibles i buida o descarta els registres afectats.
-
-✏️ Normalitza noms, aules, tipus d'equip i altres camps mal escrits.
-
-📅 Interpreta diferents formats de dates.
-
-⚙️ Unifica prioritats i estats mitjançant sinònims i correcció d'errors ortogràfics.
-
-**4. Estadístiques i resultats**
-
-📊 Mostra estadístiques de les incidències processades a la terminal.
-
-🎨 Utilitza colors per diferenciar informació, correccions i errors.
-
-📈 Mostra informació agrupada per tipus d'equip, prioritat, estat, departament, categoria, sistema operatiu i tècnic.
-
-⏱️ Calcula temps mitjans de resolució i identifica incidències crítiques pendents.
-
-**5. Emmagatzematge de dades**
+### 💾 Emmagatzematge de dades
 
 El programa genera els següents fitxers:
 
@@ -153,16 +137,7 @@ El programa genera els següents fitxers:
 | `incidencies_revisio.json` | Incidències amb dates futures o de fa més de 5 anys. |
 | `incidencies_descartades.json` | Registres amb errors i files buides. |
 
-## ⚠️ 3. Notes importants
-
-### Automatització de Google Forms
-
-- Comprova que l'entorn virtual estigui activat abans d'executar el projecte.
-- Assegura't que Chromium estigui instal·lat correctament.
-- Utilitza únicament formularis propis o entorns de proves amb autorització.
-- Evita enviar respostes automatitzades a formularis de tercers sense permís.
-
-### Gestor d'Incidències
+## ⚠️ 7. Notes importants
 
 - És necessari disposar de Python 3.
 - Els fitxers d'entrada han de tenir format CSV o XML.
@@ -174,34 +149,13 @@ El programa genera els següents fitxers:
 
 ## ⚙️ Desenvolupat amb
 
-### Automatització de Google Forms
-
-⚙️ Python
-
-⚙️ Playwright
-
-⚙️ Faker
-
-⚙️ Requests
-
-⚙️ BeautifulSoup4
-
-### Gestor d'Incidències
-
 ⚙️ Python 3
-
 ⚙️ CSV
-
 ⚙️ XML (ElementTree)
-
 ⚙️ JSON
-
 ⚙️ SVG
-
 ⚙️ Regex (expressions regulars)
-
 ⚙️ Base64
-
 ⚙️ Datetime
 
 # ⭐ Projecte desenvolupat amb finalitats educatives. ITB 26/27 MDS
