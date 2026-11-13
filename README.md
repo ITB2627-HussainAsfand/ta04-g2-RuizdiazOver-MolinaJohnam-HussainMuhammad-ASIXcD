@@ -51,11 +51,11 @@ Comprova que l'entorn virtual estigui activat abans d'executar el projecte.
 Assegura't que Chromium estigui instal·lat correctament.
 Utilitza únicament formularis propis o entorns de proves amb autorització.
 Evita enviar respostes automatitzades a formularis de tercers sense permís.
-👨‍💻 Desenvolupat amb
-🐍 Python
-🎭 Playwright
-🎲 Faker
-🌐 Requests
-🍜 BeautifulSoup4
+⚙️ Desenvolupat amb
+⚙️ Python
+⚙️ Playwright
+⚙️ Faker
+⚙️ Requests
+⚙️ BeautifulSoup4
 
 # ⭐ Projecte desenvolupat amb finalitats educatives. ITB 26/27 MDS
